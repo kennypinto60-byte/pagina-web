@@ -1,0 +1,335 @@
+/* Corrección de errores y limpieza */
+*{
+    box-sizing: border-box;
+}   
+
+body{
+    margin: 0;
+}
+
+h1{ font-size: 5.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 10px 30px;
+    border-radius: 15px;
+    color: aqua;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Corregido: faltaban valores */
+    background-color: rgb(2, 0, 128);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: aqua;
+    color: rgb(2, 0, 128);
+}
+
+.container{
+    border-radius: 34px;
+    padding: center;
+    max-width: 1400px;
+    margin: auto;
+    
+}
+.color-acento{color: blue;}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding:20px 30px;
+    font-weight: bold;
+    color: blue;
+    text-align: center; /* Corregido: era text-align, no font-size: center */
+    background-color: yellow;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Corregido: valor debe ser center o flex-start */
+}
+
+header nav{
+    display: flex;
+    -ms-flex-align: center;
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blue;
+}
+
+/* --- SECCIÓN HERO CORREGIDA --- */
+#hero {
+    border-radius: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    
+    /* 1. Fondo de Selva con Degradado */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), /* Capa oscura para que el texto se lea */
+        rgba(0,0,0,0.5)
+    ), 
+    url("https://andprof.com/wp-content/uploads/2026/01/What-is-Arduino-software-and-how-use-it.jpg"); /* URL de ejemplo */
+    
+    /* 2. Ajustes de imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#somos-proya {
+    border-radius: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    
+    /* 1. Fondo de Selva con Degradado */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), /* Capa oscura para que el texto se lea */
+        rgba(0,0,0,0.5)
+    ), 
+    url("https://ecosistemastartup.com/wp-content/uploads/2025/11/arduino-qualcomm-crisis-hardware-abierto-scaled.jpg"); /* URL de ejemplo */
+    
+    /* 2. Ajustes de imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#nuestros-proyectos{
+    border-radius: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    
+    /* 1. Fondo de Selva con Degradado */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), /* Capa oscura para que el texto se lea */
+        rgba(0,0,0,0.5)
+    ), 
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-11p_K2bmJFXd9-3z5lgJLDchcdJPO1sAkQ&s"); /* URL de ejemplo */
+    
+    /* 2. Ajustes de imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#caracteristicas{
+    border-radius: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    
+    /* 1. Fondo de Selva con Degradado */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), /* Capa oscura para que el texto se lea */
+        rgba(0,0,0,0.5)
+    ), 
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0rvQ6kk7GtadzmFpNXiq9ZNxjFxkVRhgyw&s"); /* URL de ejemplo */
+    
+    /* 2. Ajustes de imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#aprende-ya{
+    border-radius: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-color: aqua;
+    
+    /* 1. Fondo de Selva con Degradado */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), /* Capa oscura para que el texto se lea */
+        rgba(0,0,0,0.5)
+    ), 
+    url("https://andprof.com/wp-content/uploads/2026/01/What-is-Arduino-software-and-how-use-it.jpg"); /* URL de ejemplo */
+    
+    /* 2. Ajustes de imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.kenny{
+    border-radius: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    
+    /* 1. Fondo de Selva con Degradado */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), /* Capa oscura para que el texto se lea */
+        rgba(0,0,0,0.5)
+    ), 
+    url("https://www.shutterstock.com/image-vector/arduino-board-programing-internet-things-600nw-2172749531.jpg"); /* URL de ejemplo */
+    
+    /* 2. Ajustes de imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.facil{
+    background-color: rgb(220, 226, 226);
+    border-radius: 34px;
+    padding: center;
+}
+.ssd{
+    border-radius: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    
+    /* 1. Fondo de Selva con Degradado */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), /* Capa oscura para que el texto se lea */
+        rgba(0,0,0,0.5)
+    ), 
+    url("https://m.media-amazon.com/images/I/71W5DF0wVyL.jpg"); /* URL de ejemplo */
+    
+    /* 2. Ajustes de imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.doki{
+    border-radius: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    
+    /* 1. Fondo de Selva con Degradado */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), /* Capa oscura para que el texto se lea */
+        rgba(0,0,0,0.5)
+    ), 
+    url("https://img-c.udemycdn.com/course/750x422/2915286_562c.jpg"); /* URL de ejemplo */
+    
+    /* 2. Ajustes de imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h3{color: blue;}
+a{color: aqua;}
+h3{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 50px;
+}
+.card {
+    background-color: rgb(0, 123, 255);
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 25px #000700;
+    border-radius: 8px ;
+    display: inline-block;
+}
+
+.red-card{
+    background-color:#5b7;
+}
+
+.card_title{
+    padding-top: 10px;
+    font-size: 22px;
+    margin: 0;
+}
+
+.card_subtitle{
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.card_content{
+    font-size: 9px;
+    padding: 20px;
+    padding-bottom: 0;
+    background-color: rgb(94, 255, 0);
+    text-align: justify;
+    margin-bottom: 0;
+}
+.card_img{
+    width: 200px;
+    border-radius: 50%;
+}
+.pepe{
+    background-color: aqua;
+}
+.pokemon{
+    border-radius: 20px;
+}
+.ken{
+    background-color: rgb(0, 89, 255);
+}
+.an{
+background-color: blue;
+}
+#creador{
+    background-color: #5b7;
+}
+.hi{
+    border-radius: 30px;
+}
